@@ -4,6 +4,7 @@ public class FirstMissingPositive {
 		
 	}
 	
+	///A stupid one, does not make sense on runtime result.
 	public int firstMissingPositive(int[] nums) {
 		int len = nums.length;
 		if(len==0)
@@ -17,9 +18,9 @@ public class FirstMissingPositive {
 			}
 		}
 		i=0;
-		while(i<len&&i+1==nums[i]){
+		while(i<len&&i+1==nums[i])
 			i++;
-		}
+		
 		return i+1;
     }
 	
