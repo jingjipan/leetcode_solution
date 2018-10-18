@@ -4,11 +4,16 @@ public class solution {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MultiplyStrings s = new MultiplyStrings();
-		String a = "123";
-		String b = "456";
-		String result = s.multiply(a,b);
-		System.out.println(result);
+		Permute2 s = new Permute2();
+		int[] ii= {1,1,2};
+		List<List<Integer>> result = s.permuteUnique(ii);
+		for(List<Integer> ll:result){
+			for(Integer i:ll){
+				System.out.print(i);
+			}
+			System.out.println("\n");
+		}
+		System.out.println(result.size());
 	}
 	
 }
